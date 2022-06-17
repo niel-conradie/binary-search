@@ -51,3 +51,20 @@ class Search:
             return self.binary_search(sorted_list, target, low, mid_point - 1)
         else:
             return self.binary_search(sorted_list, target, mid_point + 1, high)
+
+    @staticmethod
+    def restart():
+        """ Requesting user input and validating choice. """
+        while True:
+            user_input = input("\nRestart? Yes/No: ").lower()
+            choices = ['yes', 'no']
+            if user_input not in choices:
+                print("\nPlease type 'yes' or 'no'")
+                continue
+
+            # User input conditions.
+            if user_input == 'yes':
+                return
+            if user_input == 'no':
+                print("\nThank you!")
+                quit()
