@@ -4,7 +4,7 @@ from search import Search
 
 
 def run():
-    """ Naive and Binary Search. """
+    """Naive and Binary Search."""
     run = Search()
 
     while True:
