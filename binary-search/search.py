@@ -1,4 +1,5 @@
-import random
+from random import randint
+from time import time
 
 
 class Search:
@@ -20,7 +21,7 @@ class Search:
         """Generates a sorted list."""
         sorted_list = set()
         while len(sorted_list) < user_input:
-            sorted_list.add(random.randint(-3 * user_input, 3 * user_input))
+            sorted_list.add(randint(-3 * user_input, 3 * user_input))
         sorted_list = sorted(list(sorted_list))
         return sorted_list
 
@@ -51,6 +52,33 @@ class Search:
             return self.binary_search(sorted_list, target, low, mid_point - 1)
         else:
             return self.binary_search(sorted_list, target, mid_point + 1, high)
+
+    def start_app(self):
+        """Start binary search app."""
+        while True:
+            # Requesting user input.
+            user_input = self.user_input()
+            # Generating a sorted list.
+            sorted_list = self.generate_list(user_input)
+
+            # Naive search.
+            start = time()
+            for target in sorted_list:
+                self.naive_search(sorted_list, target)
+            end = time()
+            print(f"\nNaive search: {(end - start) / user_input} seconds.")
+
+            # Binary search.
+            start = time()
+            for target in sorted_list:
+                self.binary_search(sorted_list, target)
+            end = time()
+            print(f"\nBinary search: {(end - start) / user_input} seconds.")
+
+            # Requesting user input.
+            self.restart()
+
+            continue
 
     @staticmethod
     def restart():
