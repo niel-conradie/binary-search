@@ -15,8 +15,8 @@ Binary Search can be installed via [Pip](https://pypi.org/project/pip/). To star
 
 * **Clone Repository**
 ```bash
-  $ git clone https://github.com/niel-conradie/Binary-Search.git
-  $ cd Binary-Search
+  $ git clone https://github.com/niel-conradie/binary-search.git
+  $ cd binary-search
 ```
 ### **Pip Install**
 
