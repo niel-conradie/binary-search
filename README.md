@@ -15,37 +15,38 @@ Binary Search can be installed via [Pip](https://pypi.org/project/pip/). To star
 
 * **Clone Repository**
 ```bash
-  $ git clone https://github.com/niel-conradie/binary-search.git
-  $ cd binary-search
+git clone https://github.com/niel-conradie/binary-search.git
+```
+* **Change Directory**
+```bash
+cd binary-search
 ```
 ### **Pip Install**
 
 * **Create Environment**
 ```bash
-  $ python -m venv .venv
+python -m venv .venv
 ```
 * **Activate Environment**
 ```bash
-  # Bash
-  $ source .venv/Scripts/activate
+# Bash
+$ source .venv/Scripts/activate
 
-  # Command Prompt
-  C:> .venv\Scripts\activate.bat
+# Command Prompt
+C:> .venv\Scripts\activate.bat
 
-  # macOS
-  $ .venv/bin/activate
+# macOS
+$ .venv/bin/activate
 
-  # PowerShell
-  PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-  PS C:> .venv\Scripts\Activate.ps1
+# PowerShell
+PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+PS C:> .venv\Scripts\Activate.ps1
 ```
 ----
 ## **Usage**
 
-To launch Binary Search use thus file.
-```bash
-  run.py
-```
+- To launch Binary Search use the [run.py](https://github.com/niel-conradie/binary-search/blob/master/binary-search/run.py) file to start.
+
 ----
 ## **License**
 
