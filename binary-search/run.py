@@ -8,10 +8,10 @@ def run():
     run = Search()
 
     try:
-        # Starting the game.
+        # Starting the application.
         run.start_app()
     except KeyboardInterrupt:
-        # Stopping the game.
+        # Stopping the application.
         exit("\n\nProgram Terminated")
 
 
