@@ -9,6 +9,7 @@ class Search:
     def user_input():
         """Requesting user input and validating number."""
         while True:
+            # Requesting user input.
             try:
                 user_input = int(input("\nEnter the length of the list: "))
                 return user_input
@@ -84,10 +85,12 @@ class Search:
     def restart():
         """Requesting user input and validating choice."""
         while True:
+            # Display user input options.
             print("\nTry Again?")
             print("\nYes: Type '1'")
             print("No: Type '2'")
 
+            # Requesting user input.
             try:
                 user_input = int(input("\nEnter: "))
             except ValueError:
