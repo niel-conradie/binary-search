@@ -1,8 +1,7 @@
 from search import Search
 
 
-def run():
-    """Binary Search."""
+if __name__ == "__main__":
     run = Search()
 
     try:
@@ -11,7 +10,3 @@ def run():
     except KeyboardInterrupt:
         # Stopping the application.
         quit("\n\nProgram Terminated")
-
-
-if __name__ == "__main__":
-    run()
