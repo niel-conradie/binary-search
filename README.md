@@ -4,14 +4,13 @@
 
 Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.
 
-----
+---
 
 ## **Requirements**
 
 - [Python 3.X](https://www.python.org/downloads/)
-- [Black](https://pypi.org/project/black/)
 
-----
+---
 
 ## **Installation**
 
@@ -54,22 +53,16 @@ PS C:> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 PS C:> .venv\Scripts\Activate.ps1
 ```
 
-- **Install Requirements**
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-----
+---
 
 ## **Usage**
 
 - To launch Binary Search use the [run.py](https://github.com/niel-conradie/binary-search/blob/master/binary-search/run.py) file to start.
 
-----
+---
 
 ## **License**
 
 [MIT License](https://github.com/niel-conradie/Binary-Search/blob/master/LICENSE)
 
-----
+---
